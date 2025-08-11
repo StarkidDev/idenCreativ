@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <section className="section bg-muted/50">
+      <section className="section bg-subtle">
         <div className="container">
           <ServiceCards />
         </div>
@@ -18,7 +18,7 @@ export default function Home() {
           <PortfolioPreview />
         </div>
       </section>
-      <section className="section bg-muted/50">
+      <section className="section bg-subtle">
         <div className="container">
           <Testimonials />
         </div>
