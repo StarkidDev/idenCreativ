@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0A1937; /* Deep Dark Blue for default text */
+}
+
+@theme inline {
+  /* Brand Colors */
+  --color-amber: #FFC107;
+  --color-deepblue: #0A1937;
+  --color-gray-iden: #F5F5F5;
+  --color-coral: #F96E46;
+  --color-forest: #228B22;
+
+  /* Semantic tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--color-amber);
+  --color-secondary: var(--color-coral);
+  --color-accent: var(--color-forest);
+  --color-muted: var(--color-gray-iden);
+
+  /* Fonts */
+  --font-sans: var(--font-montserrat, Arial, Helvetica, sans-serif);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat, Arial, Helvetica, sans-serif);
+}
+
+/* Simple utility classes for containers */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
