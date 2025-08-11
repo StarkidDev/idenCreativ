@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.idencreativ.com
+
+# Sitemaps
+Sitemap: https://www.idencreativ.com/sitemap.xml
